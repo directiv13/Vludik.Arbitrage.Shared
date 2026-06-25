@@ -32,14 +32,12 @@ jobs:
       - name: Pack (only IsPackable=true projects)
         run: dotnet pack Vludik.Arbitrage.Shared.sln --configuration Release --no-build --output ./artifacts
 
-      - name: Add GitHub Packages NuGet source
+      - name: Set GitHub Packages NuGet source credentials
         run: >
-          dotnet nuget add source
+          dotnet nuget update source github
           --username ${{ github.repository_owner }}
           --password ${{ secrets.GH_TOKEN }}
           --store-password-in-clear-text
-          --name github
-          "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
 
       - name: Push packages to GitHub Packages
         run: >
