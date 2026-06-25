@@ -6,6 +6,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- NuGet metadata -->
+		<IsPackable>true</IsPackable>
 		<PackageId>Vludik.Arbitrage.Events</PackageId>
 		<Version>1.0.2</Version>
 		<Authors>DrPelman</Authors>
