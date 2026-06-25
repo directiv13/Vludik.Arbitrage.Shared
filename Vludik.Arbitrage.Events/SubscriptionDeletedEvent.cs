@@ -1,0 +1,14 @@
+﻿using Vludik.Arbitrage.Events.Entities;
+
+namespace Vludik.Arbitrage.Events;
+
+public record SubscriptionDeletedEvent(
+    Guid SubscriptionId,
+    string ConnectionId,
+    string Symbol,
+    ExchangeRef BuyExchange,
+    ExchangeRef SellExchange,
+    string Reason, // "unsubscribed" | "expired"
+    long Timestamp
+);
+
