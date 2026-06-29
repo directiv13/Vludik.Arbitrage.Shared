@@ -7,7 +7,7 @@
 
 		<!-- NuGet metadata -->
 		<PackageId>Vludik.Arbitrage.Shared</PackageId>
-		<IsPackable>false</IsPackable>
+		<IsPackable>true</IsPackable>
 		<Version>1.0.0</Version>
 		<Authors>DrPelman</Authors>
 		<Description>Shared NuGet package for Arbitrage services</Description>
