@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<!-- NuGet metadata -->
+		<PackageId>Vludik.Arbitrage.JobsService.Shared</PackageId>
+		<IsPackable>true</IsPackable>
+		<Version>1.0.0</Version>
+		<Authors>DrPelman</Authors>
+		<Description>Jobs service NuGet package for Arbitrage services</Description>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Vludik.Arbitrage.Shared\Vludik.Arbitrage.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

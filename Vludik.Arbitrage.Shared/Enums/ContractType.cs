@@ -1,4 +1,4 @@
-﻿namespace Vludik.Arbitrage.Events.Entities;
+﻿namespace Vludik.Arbitrage.Shared.Enums;
 
 /// <summary>
 /// The kind of market a subscription targets.

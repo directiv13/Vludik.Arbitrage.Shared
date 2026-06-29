@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.37216.2
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vludik.Arbitrage.Events", "Vludik.Arbitrage.Events\Vludik.Arbitrage.Events.csproj", "{563D1B22-FD0F-42BD-B144-DBB53EA16F93}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vludik.Arbitrage.JobsService.Shared", "Vludik.Arbitrage.JobsService.Shared\Vludik.Arbitrage.JobsService.Shared.csproj", "{1DC876F8-BAE8-4B81-933C-684B81609701}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vludik.Arbitrage.JobsService.Worker.Shared", "Vludik.Arbitrage.JobsService.Worker.Shared\Vludik.Arbitrage.JobsService.Worker.Shared.csproj", "{9653824C-9CB9-41CB-91C6-DA0DD8B3B109}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vludik.Arbitrage.Shared", "Vludik.Arbitrage.Shared\Vludik.Arbitrage.Shared.csproj", "{500E1D24-83F3-4EEE-9645-806324CF7FF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vludik.Arbitrage.SubscriptionsService.Shared", "Vludik.Arbitrage.SubscriptionsService.Shared\Vludik.Arbitrage.SubscriptionsService.Shared.csproj", "{4BF175AA-EBAF-4B15-A637-DF144D78DF1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +17,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{563D1B22-FD0F-42BD-B144-DBB53EA16F93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{563D1B22-FD0F-42BD-B144-DBB53EA16F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{563D1B22-FD0F-42BD-B144-DBB53EA16F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{563D1B22-FD0F-42BD-B144-DBB53EA16F93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DC876F8-BAE8-4B81-933C-684B81609701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DC876F8-BAE8-4B81-933C-684B81609701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DC876F8-BAE8-4B81-933C-684B81609701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DC876F8-BAE8-4B81-933C-684B81609701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9653824C-9CB9-41CB-91C6-DA0DD8B3B109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9653824C-9CB9-41CB-91C6-DA0DD8B3B109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9653824C-9CB9-41CB-91C6-DA0DD8B3B109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9653824C-9CB9-41CB-91C6-DA0DD8B3B109}.Release|Any CPU.Build.0 = Release|Any CPU
+		{500E1D24-83F3-4EEE-9645-806324CF7FF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{500E1D24-83F3-4EEE-9645-806324CF7FF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{500E1D24-83F3-4EEE-9645-806324CF7FF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{500E1D24-83F3-4EEE-9645-806324CF7FF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BF175AA-EBAF-4B15-A637-DF144D78DF1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BF175AA-EBAF-4B15-A637-DF144D78DF1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BF175AA-EBAF-4B15-A637-DF144D78DF1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BF175AA-EBAF-4B15-A637-DF144D78DF1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
