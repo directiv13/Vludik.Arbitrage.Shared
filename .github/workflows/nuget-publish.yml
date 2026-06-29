@@ -44,3 +44,4 @@ jobs:
           dotnet nuget push "./artifacts/*.nupkg"
           --api-key ${{ secrets.GH_TOKEN }}
           --source github
+          --skip-duplicate
