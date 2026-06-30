@@ -1,6 +1,7 @@
-﻿namespace Vludik.Arbitrage.JobsService.Worker.Shared.Events
-{
-    internal class JobWorkerFailedEvent
-    {
-    }
-}
+﻿namespace Vludik.Arbitrage.JobsService.Worker.Shared.Events;
+
+public record JobWorkerFailedEvent(
+    Guid JobId,
+    string Message,
+    long Timestamp
+);

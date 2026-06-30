@@ -8,7 +8,7 @@
 		<!-- NuGet metadata -->
 		<PackageId>Vludik.Arbitrage.JobsService.Worker.Shared</PackageId>
 		<IsPackable>true</IsPackable>
-		<Version>1.0.0</Version>
+		<Version>1.0.1</Version>
 		<Authors>DrPelman</Authors>
 		<Description>Jobs worker service NuGet package for Arbitrage services</Description>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
