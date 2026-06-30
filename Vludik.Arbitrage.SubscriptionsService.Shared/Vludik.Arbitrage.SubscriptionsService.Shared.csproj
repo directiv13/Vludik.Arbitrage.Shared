@@ -8,14 +8,14 @@
 	  <!-- NuGet metadata -->
 	  <PackageId>Vludik.Arbitrage.SubscriptionsService.Shared</PackageId>
 	  <IsPackable>true</IsPackable>
-	  <Version>1.0.0</Version>
+	  <Version>1.0.1</Version>
 	  <Authors>DrPelman</Authors>
 	  <Description>Subscriptions service NuGet package for Arbitrage services</Description>
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Vludik.Arbitrage.Shared\Vludik.Arbitrage.Shared.csproj" />
+    <PackageReference Include="Vludik.Arbitrage.Shared" Version="1.0.0" />
   </ItemGroup>
 
 </Project>
