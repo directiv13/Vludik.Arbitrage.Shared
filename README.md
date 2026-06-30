@@ -6,7 +6,10 @@ Shared .NET libraries for the Vludik Arbitrage platform, published as NuGet pack
 
 | Package | Description |
 |---|---|
-| [`Vludik.Arbitrage.Events`](Vludik.Arbitrage.Events) | Cross-service event and value-object contracts: `JobCreatedEvent`, `JobFinishedEvent`, `SubscriptionCreatedEvent`, `SubscriptionDeletedEvent`, `ExchangeRef`, `ContractType`. |
+| [`Vludik.Arbitrage.Shared`](Vludik.Arbitrage.Shared) | Base contracts shared by the packages below: `ExchangeRef`, `ContractType`. |
+| [`Vludik.Arbitrage.JobsService.Shared`](Vludik.Arbitrage.JobsService.Shared) | Jobs service event contracts: `JobCreatedEvent`, `JobDeletedEvent`, `JobMode`, `MarginType`. |
+| [`Vludik.Arbitrage.JobsService.Worker.Shared`](Vludik.Arbitrage.JobsService.Worker.Shared) | Jobs worker event contracts: `JobWorkerCompletedEvent`, `JobWorkerFailedEvent`. |
+| [`Vludik.Arbitrage.SubscriptionsService.Shared`](Vludik.Arbitrage.SubscriptionsService.Shared) | Subscriptions service event contracts: `SubscriptionCreatedEvent`, `SubscriptionDeletedEvent`. |
 
 ## Building
 
@@ -44,7 +47,7 @@ Packages are published automatically to GitHub Packages by [`.github/workflows/n
 3. Install the package:
 
    ```
-   dotnet add package Vludik.Arbitrage.Events --version 1.0.2
+   dotnet add package Vludik.Arbitrage.Shared --version 1.0.0
    ```
 
-Alternatively, copy the [`nuget.config`](nuget.config) at the repo root into a consuming project and replace its placeholder `ClearTextPassword` with a real PAT.
+The [`nuget.config`](nuget.config) at the repo root declares the `github` source and scopes it to `Vludik.Arbitrage.*` packages, but carries no credentials — copying it into a consuming project still requires registering your own PAT via step 2 above (or a `packageSourceCredentials` block in your own config).
